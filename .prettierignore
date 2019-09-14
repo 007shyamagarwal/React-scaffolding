@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+config/
+build/
+scripts/
+src/registerServiceWorker.js
+src/redux-factory
+package-lock.json

@@ -1,0 +1,54 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"node": true
+	},
+	"plugins": ["import", "react", "react-hooks"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings",
+		"plugin:react/recommended",
+		"plugin:prettier/recommended"
+	],
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": 2018,
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx"]
+			},
+			"webpack": {
+				"alias": true
+			},
+			"alias": {
+				"map": [
+					["atoms", "./src/components/atoms"],
+					["utils", "./src/utils"],
+					["assets", "./src/assets"]
+				]
+			}
+		},
+		"react": {
+			"version": "detect"
+		}
+	},
+	"rules": {
+		"linebreak-style": ["error", "unix"],
+		"react/jsx-filename-extension": [
+			1,
+			{
+				"extensions": [".js", ".jsx"]
+			}
+		],
+		"react-hooks/rules-of-hooks": "error"
+	}
+}
