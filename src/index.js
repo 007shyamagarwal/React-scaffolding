@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header';
-import { Button } from 'react-bootstrap';
+import Dashboard from './components/Dashboard';
+import Header from './components/Header';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <Button type="primary">Start with Project</Button>
+      <BrowserRouter>
+        <>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Dashboard} />
+          </Switch>
+        </>
+      </BrowserRouter>
     </div>
   );
 };

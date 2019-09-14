@@ -3,18 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
     "bootstrap": "^4.3.1",
+    "json2xls": "^0.1.2",
     "lodash": "^4.17.11",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "^16.9.0",
+    "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-scripts": "3.1.1",
+    "react-vis": "^1.11.7",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0",
-    "react-redux": "^5.0.6",
     "redux-api-middleware": "^3.0.1",
-    "react-bootstrap": "^1.0.0-beta.5"
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",

@@ -1,0 +1,27 @@
+.table .table-striped .table-bordered {
+  margin: 40px;
+}
+.table-bordered {
+  border: none;
+
+  tbody {
+    tr {
+      outline: 0.5px solid whitesmoke;
+
+      td {
+        line-height: 1;
+        width: 180px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.table__overlay {
+  width: 90.3%;
+  height: 278px;
+  text-align: center;
+  padding-top: 3rem;
+  background-image: linear-gradient(to bottom, rgba(241, 244, 241, 0), #f1f4f1);
+  position: absolute;
+}
